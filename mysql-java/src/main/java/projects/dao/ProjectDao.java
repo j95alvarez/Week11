@@ -251,7 +251,6 @@ public class ProjectDao extends DaoBase {
 				return modified;
 			} catch (Exception e) {
 				rollbackTransaction(conn);
-				System.out.println("HERE");
 				throw new DbException(e);
 			}
 		} catch (SQLException e) {
