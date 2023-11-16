@@ -245,7 +245,6 @@ public class ProjectDao extends DaoBase {
 				
 				
 				boolean modified  = stmt.executeUpdate() == 1;
-				System.out.println(modified);
 				commitTransaction(conn);
 				
 				return modified;
